@@ -1,0 +1,27 @@
+{
+  "Toyota Vision & Fleet Control": {
+    "url": "https://github.com/hmolavi",
+    "language": "C++",
+    "isHardware": true
+  },
+  "Plant Protector": {
+    "url": "https://github.com/hmolavi",
+    "language": "C",
+    "isHardware": true
+  },
+  "Firefighter Robot": {
+    "url": "https://github.com/hmolavi",
+    "language": "C",
+    "isHardware": true
+  },
+  "CAN Sniffer": {
+    "url": "https://github.com/hmolavi",
+    "language": "Python",
+    "isHardware": false
+  },
+  "NVS Config": {
+    "url": "https://github.com/hmolavi",
+    "language": "C",
+    "isHardware": false
+  }
+}
