@@ -30,78 +30,83 @@ function ObfuscatedEmail() {
 
 export default function About() {
   return (
-    <section id="about" className="min-h-[calc(100vh-4rem)] flex items-center py-20">
-      <div className="max-w-[1150px] mx-auto px-4 sm:px-6 w-full">
-        <div className="flex flex-col md:flex-row gap-10 items-center">
-          {/* Text content */}
-          <div className="flex-1">
-            <p className="text-primary font-medium mb-2">Hi, I&apos;m</p>
-            <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-              Hossein Molavi
-            </h1>
-            <p className="text-xl text-muted-foreground mb-2">
-              Computer Engineering Student @ UWaterloo
-            </p>
-            <p className="flex items-center gap-1.5 text-sm text-muted-foreground mb-6">
-              <MapPin className="w-4 h-4" /> Waterloo, ON
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-4">
-              Building at the boundary between silicon and software — from bare-metal
-              firmware and wireless protocols to cloud-connected IoT systems.
-              Currently in my final year of Computer Engineering at the University
-              of Waterloo, with experience across firmware development, full-stack
-              engineering, and research.
-            </p>
-            <p className="text-sm text-muted-foreground mb-8">
-              <ObfuscatedEmail />
-            </p>
+    <>
+      {/* Hero */}
+      <section id="about" className="min-h-[calc(100vh-4rem)] flex items-center py-20">
+        <div className="max-w-[1150px] mx-auto px-4 sm:px-6 w-full">
+          <div className="flex flex-col md:flex-row gap-10 items-center">
+            {/* Text content */}
+            <div className="flex-1">
+              <p className="text-primary font-medium mb-2">Hi, I&apos;m</p>
+              <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+                Hossein Molavi
+              </h1>
+              <p className="text-xl text-muted-foreground mb-2">
+                Computer Engineering Student @ UWaterloo
+              </p>
+              <p className="flex items-center gap-1.5 text-sm text-muted-foreground mb-6">
+                <MapPin className="w-4 h-4" /> Waterloo, ON
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Building at the boundary between silicon and software — from bare-metal
+                firmware and wireless protocols to cloud-connected IoT systems.
+                Currently in my final year of Computer Engineering at the University
+                of Waterloo, with experience across firmware development, full-stack
+                engineering, and research.
+              </p>
+              <p className="text-sm text-muted-foreground mb-8">
+                <ObfuscatedEmail />
+              </p>
 
-            {/* Links */}
-            <div className="flex flex-wrap gap-3">
-              <a
-                href="https://github.com/hmolavi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 p-2.5 rounded-lg bg-muted hover:bg-muted/80 text-sm font-medium transition-colors"
-                aria-label="GitHub"
-              >
-                <Github className="w-5 h-5" />
-              </a>
-              <a
-                href="https://linkedin.com/in/hmolavi"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 p-2.5 rounded-lg bg-muted hover:bg-muted/80 text-sm font-medium transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary-dark transition-colors"
-              >
-                <FileText className="w-4 h-4" /> Resume
-              </a>
+              {/* Links */}
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://github.com/hmolavi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 p-2.5 rounded-lg bg-muted hover:bg-muted/80 text-sm font-medium transition-colors"
+                  aria-label="GitHub"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://linkedin.com/in/hmolavi"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 p-2.5 rounded-lg bg-muted hover:bg-muted/80 text-sm font-medium transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="w-5 h-5" />
+                </a>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-white text-sm font-medium hover:bg-primary-dark transition-colors"
+                >
+                  <FileText className="w-4 h-4" /> Resume
+                </a>
+              </div>
             </div>
-          </div>
 
-          {/* Photo */}
-          <div className="flex-shrink-0">
-            <div className="w-64 h-72 md:w-72 md:h-80 relative rounded-2xl overflow-hidden border-2 border-border">
-              <Image
-                src="/headshot.webp"
-                alt="Hossein Molavi"
-                fill
-                className="object-cover object-top"
-                priority
-              />
+            {/* Photo */}
+            <div className="flex-shrink-0">
+              <div className="w-64 h-72 md:w-72 md:h-80 relative rounded-2xl overflow-hidden border-2 border-border">
+                <Image
+                  src="/headshot.webp"
+                  alt="Hossein Molavi"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Skills */}
-        <div className="mt-20">
+      {/* Skills */}
+      <section className="py-20">
+        <div className="max-w-[1150px] mx-auto px-4 sm:px-6">
           <SectionHeading title="Skills" />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {Object.entries(resumeData.skills).map(([category, items]) => (
@@ -123,7 +128,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }
