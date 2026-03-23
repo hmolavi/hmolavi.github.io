@@ -15,9 +15,9 @@ function ObfuscatedEmail() {
     <a
       href="#contact"
       onClick={handleClick}
-      className="inline-flex items-center gap-2 text-primary hover:underline cursor-pointer"
+      className="inline-flex items-center gap-2 text-lg text-primary hover:underline cursor-pointer"
     >
-      <Mail className="w-4 h-4" />
+      <Mail className="w-5 h-5" />
       {"hmolavi"}
       <span className="text-muted-foreground"> (at) </span>
       {"uwaterloo"}
@@ -33,7 +33,7 @@ export default function Contact() {
       <div className="max-w-[1150px] mx-auto px-4 sm:px-6">
         <SectionHeading title="Get In Touch" />
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-muted-foreground mb-6">
+          <p className="text-lg text-muted-foreground mb-6">
             Have a question or want to work together? Feel free to reach out!
           </p>
 
@@ -45,7 +45,7 @@ export default function Contact() {
             href="https://calendar.app.google/JTpytHTMsYePoLYJA"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-white font-medium hover:bg-primary-dark transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-white text-lg font-medium hover:bg-primary-dark transition-colors"
           >
             <CalendarDays className="w-5 h-5" /> Book a Meeting
           </a>

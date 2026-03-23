@@ -15,12 +15,12 @@
 
   .dark {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f5f5f5;
     --card: #171717;
-    --card-foreground: #ededed;
+    --card-foreground: #f5f5f5;
     --muted: #262626;
-    --muted-foreground: #a3a3a3;
-    --border: #2e2e2e;
+    --muted-foreground: #d4d4d4;
+    --border: #333333;
   }
 }
 
@@ -31,6 +31,8 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 section {

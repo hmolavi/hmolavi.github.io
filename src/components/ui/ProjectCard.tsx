@@ -42,27 +42,27 @@ export default function ProjectCard({
         </div>
       )}
 
-      <div className="p-5">
-        <div className="flex items-start justify-between mb-2">
-          <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
+      <div className="p-6">
+        <div className="flex items-start justify-between mb-3">
+          <h3 className="font-semibold text-xl group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <ExternalLink className="w-4 h-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 mt-1" />
+          <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 mt-1" />
         </div>
-        <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+        <p className="text-base text-muted-foreground mb-4 line-clamp-3">
           {description}
         </p>
         <div className="flex items-center gap-2 flex-wrap">
           {language && (
-            <span className="flex items-center gap-1 text-xs text-muted-foreground">
-              <span className="w-2.5 h-2.5 rounded-full bg-primary" />
+            <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+              <span className="w-3 h-3 rounded-full bg-primary" />
               {language}
             </span>
           )}
           {topics?.map((topic) => (
             <span
               key={topic}
-              className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground"
+              className="text-sm px-2.5 py-0.5 rounded-full bg-muted text-muted-foreground"
             >
               {topic}
             </span>

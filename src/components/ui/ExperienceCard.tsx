@@ -26,14 +26,14 @@ export default function ExperienceCard({
 
   return (
     <div
-      className="border border-border rounded-lg p-5 hover:border-primary transition-colors cursor-pointer"
+      className="border border-border rounded-lg p-6 hover:border-primary transition-colors cursor-pointer"
       onClick={() => setExpanded(!expanded)}
     >
       <div className="flex justify-between items-start">
         <div>
-          <h3 className="text-lg font-semibold">{title}</h3>
-          <p className="text-primary font-medium">{company}</p>
-          <p className="text-sm text-muted-foreground">
+          <h3 className="text-xl font-semibold">{title}</h3>
+          <p className="text-primary text-lg font-medium">{company}</p>
+          <p className="text-base text-muted-foreground">
             {startDate} - {endDate} | {location}
           </p>
         </div>
@@ -52,17 +52,17 @@ export default function ExperienceCard({
           expanded ? "max-h-[500px] mt-4" : "max-h-0"
         }`}
       >
-        <ul className="list-disc list-inside space-y-1.5 text-sm text-muted-foreground">
+        <ul className="list-disc list-inside space-y-2 text-base text-muted-foreground">
           {bullets.map((bullet, i) => (
             <li key={i}>{bullet}</li>
           ))}
         </ul>
         {tools && tools.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-3">
+          <div className="flex flex-wrap gap-2 mt-4">
             {tools.map((tool) => (
               <span
                 key={tool}
-                className="text-xs px-2.5 py-1 rounded-full bg-primary/10 text-primary"
+                className="text-sm px-3 py-1 rounded-full bg-primary/10 text-primary"
               >
                 {tool}
               </span>

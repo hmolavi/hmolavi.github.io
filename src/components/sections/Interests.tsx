@@ -26,11 +26,11 @@ export default function Interests() {
           {INTERESTS.map(({ icon: Icon, label, description }) => (
             <div
               key={label}
-              className="border border-border rounded-lg p-5 hover:border-primary transition-colors text-center"
+              className="border border-border rounded-lg p-6 hover:border-primary transition-colors text-center"
             >
-              <Icon className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold text-sm mb-1">{label}</h3>
-              <p className="text-xs text-muted-foreground">{description}</p>
+              <Icon className="w-9 h-9 text-primary mx-auto mb-3" />
+              <h3 className="font-semibold text-base mb-1">{label}</h3>
+              <p className="text-sm text-muted-foreground">{description}</p>
             </div>
           ))}
         </div>
