@@ -7,7 +7,7 @@ import resumeData from "@/data/resume.json";
 import projectsMeta from "@/data/projects-meta.json";
 
 const PROJECTS = resumeData.projects.map((project) => {
-  const meta = (projectsMeta as Record<string, { url: string; language: string; isHardware: boolean; image?: string }>)[project.name];
+  const meta = (projectsMeta as Record<string, { url: string; language: string; isHardware: boolean }>)[project.name];
   return {
     name: project.name,
     description: project.bullets.join(" "),
@@ -15,7 +15,7 @@ const PROJECTS = resumeData.projects.map((project) => {
     topics: project.tools,
     url: meta?.url || "https://github.com/hmolavi",
     isHardware: meta?.isHardware ?? false,
-    image: meta?.image,
+    image: (project as Record<string, unknown>).image as string | undefined,
   };
 });
 
