@@ -1,6 +1,15 @@
+"use client";
+
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
+  const handleEmailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const user = "hmolavi";
+    const domain = "uwaterloo.ca";
+    window.location.href = `mailto:${user}@${domain}`;
+  };
+
   return (
     <footer className="border-t border-border py-8">
       <div className="max-w-[1150px] mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -27,7 +36,8 @@ export default function Footer() {
             <Linkedin className="w-5 h-5" />
           </a>
           <a
-            href="mailto:hmolavi@uwaterloo.ca"
+            href="#contact"
+            onClick={handleEmailClick}
             className="text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Email"
           >
