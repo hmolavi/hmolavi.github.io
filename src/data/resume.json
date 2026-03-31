@@ -159,7 +159,8 @@
       "bullets": [
         "Won vision challenge (fastest time out of 300+ entrants) using C++ & Orbbec SDK",
         "Sole team completing all fleet stages using Python/ROS2 for autonomous fleet control"
-      ]
+      ],
+      "image": "/projects/toyota-vision-fleet-control.webp"
     },
     {
       "name": "Plant Protector",
