@@ -230,7 +230,8 @@
         "Won top vision prize (300+ participants) with the fastest completion time",
         "Built a C++ vehicle-tracking pipeline using the Orbbec Astra SDK"
       ],
-      "url": "https://hmolavi.com/toyota-challenge/"
+      "url": "https://hmolavi.com/toyota-challenge/",
+      "image": "/projects/toyota-computer-vision-challenge.webp"
     },
     {
       "name": "Toyota Fleet Control Challenge",
