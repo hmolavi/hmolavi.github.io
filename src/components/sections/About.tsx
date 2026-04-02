@@ -48,11 +48,7 @@ export default function About() {
                 <MapPin className="w-5 h-5" /> Waterloo, ON
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                Building at the boundary between silicon and software, from bare-metal
-                firmware and wireless protocols to cloud-connected IoT systems.
-                Currently in my final year of Computer Engineering at the University
-                of Waterloo, with experience across firmware development, full-stack
-                engineering, and research.
+                Building at the boundary between silicon and software, from bare-metal firmware and wireless protocols to cloud-connected IoT systems. Currently in my final year of Computer Engineering at the University of Waterloo.
               </p>
               <p className="text-muted-foreground mb-8">
                 <ObfuscatedEmail />
