@@ -24,10 +24,10 @@ export interface ResumeProject {
   name: string;
   tools: string[];
   bullets: string[];
+  url?: string;
 }
 
 export interface ProjectMeta {
-  url: string;
   language: string;
   isHardware: boolean;
 }

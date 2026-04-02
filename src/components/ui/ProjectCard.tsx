@@ -6,7 +6,7 @@ interface ProjectCardProps {
   description: string;
   language?: string;
   topics?: string[];
-  url: string;
+  url?: string;
   image?: string;
 }
 
@@ -18,13 +18,10 @@ export default function ProjectCard({
   url,
   image,
 }: ProjectCardProps) {
-  return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group block border border-border rounded-xl overflow-hidden hover:border-primary transition-all hover:-translate-y-1"
-    >
+  const hasLink = !!url;
+
+  const content = (
+    <>
       {/* Project image */}
       {image && (
         <div className="relative w-full aspect-video bg-muted">
@@ -47,7 +44,9 @@ export default function ProjectCard({
           <h3 className="font-semibold text-xl group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 mt-1" />
+          {hasLink && (
+            <ExternalLink className="w-5 h-5 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 mt-1" />
+          )}
         </div>
         <p className="text-base text-muted-foreground mb-4 line-clamp-3">
           {description}
@@ -69,6 +68,25 @@ export default function ProjectCard({
           ))}
         </div>
       </div>
-    </a>
+    </>
+  );
+
+  if (hasLink) {
+    return (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group block border border-border rounded-xl overflow-hidden hover:border-primary transition-all hover:-translate-y-1"
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className="group block border border-border rounded-xl overflow-hidden">
+      {content}
+    </div>
   );
 }
