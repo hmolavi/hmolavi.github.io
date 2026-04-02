@@ -7,24 +7,45 @@
       "startDate": "Sept 2025",
       "endDate": "Apr 2026",
       "bullets": [
-        "Developing cutting-edge LE Audio and Bluetooth Classic functionality into an all-in-one application",
-        "Implementing low-latency audio streaming protocols for wireless audio devices",
-        "Contributing to Bluetooth stack optimization for power-constrained embedded platforms"
+        "Developed software for hearing aids specializing in Bluetooth connectivity, audio streaming, and low-power wireless protocols including Bluetooth Classic, LE Audio, and Near-Field Magnetic Induction (NFMI)",
+        "Hardened NFMI driver by resolving DMA and timing race conditions that caused corrupt data in received payloads, implementing RX buffer overrun and TX buffer underrun detection in the IRQ handler to flag corrupted audio frames for PLC",
+        "Built wireless audio interfaces supporting HFP and A2DP profiles with mSBC and CVSD codec integration, while resolving packet synchronization and connection timeout bugs",
+        "Developed NfmiManager application for ear-to-ear audio forwarding across HFP and A2DP Bluetooth protocols, handling fragmentation of audio SBC frames, reconstruction on the receiving side, and PLC insertion for lost or corrupted frames",
+        "Engineered BinauralManager module for guaranteed payload delivery via ear-to-ear communication, implementing payload confirmation, retransmission on failure, and per-packet fragmentation with individual packet retransmission",
+        "Brought up NFMI ear-to-ear audio forwarding and conducted RF performance testing for robust wireless audio quality",
+        "Captured HCI logs and Ellisys packet sniffs for AirPods and Galaxy Buds to reverse-engineer Bluetooth Classic and LE Audio implementations of commercial earbuds",
+        "Contributed to standardizing unit tests across the project using the CppUTest framework with gcov, creating a unified test program that fetches and compiles all module tests in the codebase",
+        "Wrote 200+ unit tests for the NFMI application layer, achieving 98% code coverage"
+      ]
+    },
+    {
+      "title": "Founder & CTO",
+      "company": "UMBRA - Anti-Drone Defense Systems",
+      "location": "Waterloo, ON",
+      "startDate": "Apr 2025",
+      "endDate": "Present",
+      "bullets": [
+        "Founded defense technology startup building autonomous anti-drone turret systems integrating real-time computer vision with precision motor control",
+        "Designed optimized 4-byte UART serial protocol with start/end byte framing and state-machine parser on Arduino for robust, low-latency command reception from the Python host system",
+        "Engineered real-time converging control system that converts detected object pixel offsets to stepper motor pulse counts using FOV-calibrated degree-per-pixel mapping for precise turret aiming",
+        "Implemented non-blocking dual-axis stepper motor control with microsecond-precision timing, hardware limit switch homing, and automatic Y-axis centering calibration on startup",
+        "Built multi-threaded Python application with dedicated threads for YOLO inference, camera capture, and serial communication, using thread-safe queues to decouple detection latency from motor control rate",
+        "Integrated gun mechanism control with servo-driven enable/disable and shoot actions, debounced detection thresholds, configurable wind-up delays, and spacebar safety lockout"
       ]
     },
     {
       "title": "Embedded Firmware Engineering Intern",
-      "company": "Wrmth Corp",
+      "company": "Wrmth Corp.",
       "location": "North Bay, ON",
       "startDate": "Jan 2025",
       "endDate": "Apr 2025",
       "bullets": [
-        "Engineered robust C firmware for ESP32, integrating secure BLE/Wi-Fi via MQTT & AWS IoT Core",
-        "Implemented secure AWS IoT fleet provisioning using PKI for large-scale deployment",
-        "Architected reliable OTA update system on FreeRTOS, handling Wi-Fi updates on ESP32",
-        "Optimized OTA process for constrained 512KB RAM via chunked downloads and flash writes",
-        "Achieved >99.5% success rate for secure OTA firmware updates across 10+ test devices",
-        "Resolved critical memory leaks by debugging race conditions with JTAG & ESP-IDF memory analysis"
+        "Engineered robust C firmware for ESP32, integrating secure BLE and Wi-Fi connectivity via MQTT and AWS IoT Core for bidirectional device communication",
+        "Implemented secure AWS IoT fleet provisioning using PKI certificates for scalable large-scale device deployment",
+        "Architected reliable over-the-air (OTA) firmware update system on FreeRTOS, handling chunked downloads and flash writes within constrained 512KB RAM",
+        "Achieved $>$99.5% success rate for secure OTA firmware updates across 10+ test devices",
+        "Resolved critical memory leaks by debugging race conditions with JTAG and ESP-IDF memory analysis tools",
+        "Optimized OTA process for constrained memory via chunked download buffers and sequential flash write operations"
       ]
     },
     {
@@ -37,21 +58,22 @@
         "Developed and released 3 Swift networking packages, introducing modular networking system",
         "Created a foundational networking package to simplify API call programming, eliminating manual JSON construction",
         "Designed 2 custom Swift packages tailored to the company's CRM systems on distinct platforms",
-        "Automated CRM data workflows, reducing project entry time from ~1 min to < 4 seconds"
+        "Automated CRM data workflows, reducing project entry time from $\\sim$10 min to $<$4 seconds"
       ]
     },
     {
       "title": "Embedded Systems Programmer",
-      "company": "Midnight Sun Solar Car",
+      "company": "Midnight Sun Solar Car Team",
       "location": "Waterloo, ON",
       "startDate": "Aug 2023",
       "endDate": "Dec 2023",
       "bullets": [
-        "Contributed to Midnight Sun's 15th generation solar car (MSXV), which competed in the American Solar Car Challenge",
-        "Engineered vehicle firmware mock-up with hardware-in-loop testing, reducing prototype validation time",
-        "Implemented FreeRTOS wrappers, thread-safe protocol APIs and memory management features for STM32f1",
-        "Built thread-safe protocol APIs and implemented hard-fault register dumps for debugging",
-        "Implemented Multi-Channel DMA-driven ADC on the STM32f1 microcontrollers"
+        "Contributed to MSXV, Midnight Sun's 15th generation solar car that competed in the American Solar Car Challenge in Summer 2024",
+        "Implemented FreeRTOS wrappers for task declarations, semaphores, and queues, providing a clean abstraction layer for the vehicle firmware",
+        "Created thread-safe protocol APIs, implemented hard-fault register dump diagnostics, and tuned compiler flags for code size optimization",
+        "Enhanced micro-architecture efficiency by enabling FPU acceleration and reducing compiled code size by 15%",
+        "Implemented multi-channel DMA-driven ADC on the STM32F1 microcontrollers for high-throughput sensor data acquisition",
+        "Engineered vehicle firmware mock-up with hardware-in-loop testing infrastructure, reducing prototype validation time for automotive embedded systems"
       ]
     },
     {
@@ -148,32 +170,103 @@
   },
   "projects": [
     {
-      "name": "Toyota Vision & Fleet Control",
+      "name": "RideSafe (Capstone)",
+      "tools": [
+        "ESP32-S3",
+        "BLE (NimBLE)",
+        "FreeRTOS",
+        "SPI/DMA",
+        "RMT"
+      ],
+      "bullets": [
+        "Built a dual-ESP32 cyclist safety system with radar, camera, haptics, and LED alerts",
+        "Implemented low-latency NimBLE data forwarding between rear and handlebar modules with secure bonding",
+        "Optimized display and LED pipelines using SPI DMA and RMT for responsive real-time feedback"
+      ]
+    },
+    {
+      "name": "NVS Config (Open Source)",
+      "tools": [
+        "C",
+        "ESP-IDF",
+        "Published to ESP Component Registry"
+      ],
+      "bullets": [
+        "Published an ESP-IDF component for type-safe, macro-generated NVS parameter APIs",
+        "Added mutex safety, versioning, callbacks, and UART runtime configuration tools"
+      ]
+    },
+    {
+      "name": "Real-Time Operating System",
+      "tools": [
+        "C",
+        "ARM Assembly",
+        "STM32F401 (Cortex-M4)"
+      ],
+      "bullets": [
+        "Built a preemptive RTOS from scratch with EDF scheduling on STM32F401",
+        "Implemented ARM PendSV/SVC context switching and a buddy-allocator task memory system"
+      ]
+    },
+    {
+      "name": "5-Stage RISC-V Processor",
+      "tools": [
+        "Verilog",
+        "ECE320"
+      ],
+      "bullets": [
+        "Designed a fully pipelined 5-stage RISC-V CPU in Verilog",
+        "Implemented ALU, decoder, register file, branch logic, and memory/writeback data paths"
+      ]
+    },
+    {
+      "name": "Toyota Computer Vision Challenge",
       "tools": [
         "C++",
         "Orbbec SDK",
+        "CV"
+      ],
+      "bullets": [
+        "Won top vision prize (300+ participants) with the fastest completion time",
+        "Built a C++ vehicle-tracking pipeline using the Orbbec Astra SDK"
+      ],
+      "url": "https://hmolavi.com/toyota-challenge/"
+    },
+    {
+      "name": "Toyota Fleet Control Challenge",
+      "tools": [
         "Python",
         "ROS2",
         "SLAM"
       ],
       "bullets": [
-        "Won vision challenge (fastest time out of 300+ entrants) using C++ & Orbbec SDK",
-        "Sole team completing all fleet stages using Python/ROS2 for autonomous fleet control"
+        "Only team to complete all autonomous fleet stages in the challenge",
+        "Built ROS2/Python control logic and extended the TMMC wrapper for Gazebo simulation"
       ],
-      "image": "/projects/toyota-vision-fleet-control.webp"
+      "url": "https://hmolavi.com/toyota-fleet-challenge/"
     },
     {
-      "name": "Plant Protector",
+      "name": "Plant Protector - IoT Gardening Device",
       "tools": [
-        "C",
         "ESP32-S3",
-        "ATMega328p",
-        "AWS IoT Core",
-        "KiCad"
+        "ATMega328P",
+        "KiCad",
+        "AWS IoT Core"
       ],
       "bullets": [
-        "Self-fleet-provisioning device measuring plant vitals to precisely water at optimal times",
-        "Connects to AWS IoT Core via bidirectional Pub/Sub using ESP32-S3 and ATMega328p"
+        "Built an IoT plant monitor with custom PCBs and adaptive watering based on sensor telemetry",
+        "Integrated AWS IoT MQTT and reliable ESP32-ATMega SPI communication with error correction"
+      ]
+    },
+    {
+      "name": "FPGA Sorting Engine",
+      "tools": [
+        "Verilog",
+        "Icarus Verilog"
+      ],
+      "bullets": [
+        "Designed a parallel FPGA sorting engine using an even-odd transposition pipeline",
+        "Reduced sort latency through staged comparator parallelism"
       ]
     },
     {
@@ -184,29 +277,48 @@
         "PCB Design"
       ],
       "bullets": [
-        "Autonomous robot that searched for and extinguished flame using PIC16F887 and custom PCBs",
-        "Enhanced wall tracking algorithm using 3 IR sensors for reliable navigation"
+        "Built an autonomous flame-finding robot on PIC16F887 with custom control PCBs",
+        "Improved navigation reliability using a 3-sensor IR wall-tracking algorithm"
       ]
     },
     {
-      "name": "CAN Sniffer",
+      "name": "CAN Bus Sniffer",
       "tools": [
-        "Python",
-        "PyQt5",
-        "CAN Bus"
+        "C++",
+        "Arduino",
+        "MCP2515",
+        "PyQt5"
       ],
       "bullets": [
-        "CAN bus reader with custom PyQt5 GUI, allowing for easy CAN filtering and saving/loading sessions"
+        "Built a real-time CAN packet sniffer using Arduino + MCP2515 with interrupt-driven capture",
+        "Created a PyQt5 desktop app for live viewing, filtering, and CSV export"
       ]
     },
     {
-      "name": "NVS Config",
+      "name": "Firefighter Robot",
+      "tools": [
+        "BASIC",
+        "PIC16F887",
+        "Custom PCBs"
+      ],
+      "bullets": [
+        "Built a maze-navigation firefighter robot using PIC16F887, IR sensing, and blower-based extinguishing",
+        "Implemented wall tracking for obstacle avoidance and room search behavior"
+      ]
+    },
+    {
+      "name": "Stereo Audio Player",
       "tools": [
         "C",
-        "ESP-IDF"
+        "Verilog/VHDL",
+        "Intel Cyclone II FPGA",
+        "Nios II",
+        "Avalon Bus",
+        "WM8731 Codec"
       ],
       "bullets": [
-        "ESP component designed to make handling of non-volatile storage (NVS) flash easy"
+        "Built an FPGA stereo player that streams WAV audio from SD card to WM8731 codec",
+        "Added interrupt-driven controls and playback modes (speed change, reverse, stereo delay)"
       ]
     }
   ]
