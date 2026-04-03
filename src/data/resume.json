@@ -182,7 +182,8 @@
         "Built a dual-ESP32 cyclist safety system with radar, camera, haptics, and LED alerts",
         "Implemented low-latency NimBLE data forwarding between rear and handlebar modules with secure bonding",
         "Optimized display and LED pipelines using SPI DMA and RMT for responsive real-time feedback"
-      ]
+      ],
+      "image": "/projects/ridesafe-capstone.webp"
     },
     {
       "name": "NVS Config (Open Source)",
