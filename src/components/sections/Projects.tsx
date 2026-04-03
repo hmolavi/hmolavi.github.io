@@ -11,7 +11,6 @@ const PROJECTS = resumeData.projects.map((project) => {
   return {
     name: project.name,
     description: project.bullets.join(" "),
-    language: meta?.language || project.tools[0] || "",
     topics: project.tools,
     url: (project as Record<string, unknown>).url as string | undefined,
     isHardware: meta?.isHardware ?? false,

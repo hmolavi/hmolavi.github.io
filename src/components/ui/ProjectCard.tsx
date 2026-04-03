@@ -4,7 +4,6 @@ import { ExternalLink, Github } from "lucide-react";
 interface ProjectCardProps {
   name: string;
   description: string;
-  language?: string;
   topics?: string[];
   url?: string;
   image?: string;
@@ -13,7 +12,6 @@ interface ProjectCardProps {
 export default function ProjectCard({
   name,
   description,
-  language,
   topics,
   url,
   image,
@@ -52,12 +50,6 @@ export default function ProjectCard({
           {description}
         </p>
         <div className="flex items-center gap-2 flex-wrap">
-          {language && (
-            <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
-              <span className="w-3 h-3 rounded-full bg-primary" />
-              {language}
-            </span>
-          )}
           {topics?.map((topic) => (
             <span
               key={topic}
