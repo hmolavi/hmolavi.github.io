@@ -212,8 +212,7 @@
     {
       "name": "5-Stage RISC-V Processor",
       "tools": [
-        "Verilog",
-        "ECE320"
+        "Verilog"
       ],
       "bullets": [
         "Designed a fully pipelined 5-stage RISC-V CPU in Verilog",
