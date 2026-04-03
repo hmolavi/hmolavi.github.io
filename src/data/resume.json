@@ -43,7 +43,7 @@
         "Engineered robust C firmware for ESP32, integrating secure BLE and Wi-Fi connectivity via MQTT and AWS IoT Core for bidirectional device communication",
         "Implemented secure AWS IoT fleet provisioning using PKI certificates for scalable large-scale device deployment",
         "Architected reliable over-the-air (OTA) firmware update system on FreeRTOS, handling chunked downloads and flash writes within constrained 512KB RAM",
-        "Achieved $>$99.5% success rate for secure OTA firmware updates across 10+ test devices",
+        "Achieved >99.5% success rate for secure OTA firmware updates across 10+ test devices",
         "Resolved critical memory leaks by debugging race conditions with JTAG and ESP-IDF memory analysis tools",
         "Optimized OTA process for constrained memory via chunked download buffers and sequential flash write operations"
       ]
@@ -58,7 +58,7 @@
         "Developed and released 3 Swift networking packages, introducing modular networking system",
         "Created a foundational networking package to simplify API call programming, eliminating manual JSON construction",
         "Designed 2 custom Swift packages tailored to the company's CRM systems on distinct platforms",
-        "Automated CRM data workflows, reducing project entry time from $\\sim$10 min to $<$4 seconds"
+        "Automated CRM data workflows, reducing project entry time from ~10 min to <4 seconds"
       ]
     },
     {
@@ -244,7 +244,8 @@
         "Only team to complete all autonomous fleet stages in the challenge",
         "Built ROS2/Python control logic and extended the TMMC wrapper for Gazebo simulation"
       ],
-      "url": "https://hmolavi.com/toyota-fleet-challenge/"
+      "url": "https://hmolavi.com/toyota-fleet-challenge/",
+      "image": "/projects/toyota-fleet-control-challenge.webp"
     },
     {
       "name": "Plant Protector - IoT Gardening Device",
@@ -268,7 +269,8 @@
       "bullets": [
         "Designed a parallel FPGA sorting engine using an even-odd transposition pipeline",
         "Reduced sort latency through staged comparator parallelism"
-      ]
+      ],
+      "image": "/projects/fpga-sorting-engine.webp"
     },
     {
       "name": "Firefighter Robot",
@@ -280,7 +282,8 @@
       "bullets": [
         "Built an autonomous flame-finding robot on PIC16F887 with custom control PCBs",
         "Improved navigation reliability using a 3-sensor IR wall-tracking algorithm"
-      ]
+      ],
+      "image": "/projects/firefighter-robot.webp"
     },
     {
       "name": "CAN Bus Sniffer",
@@ -305,7 +308,8 @@
       "bullets": [
         "Built a maze-navigation firefighter robot using PIC16F887, IR sensing, and blower-based extinguishing",
         "Implemented wall tracking for obstacle avoidance and room search behavior"
-      ]
+      ],
+      "image": "/projects/firefighter-robot.webp"
     },
     {
       "name": "Stereo Audio Player",
