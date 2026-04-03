@@ -296,7 +296,8 @@
       "bullets": [
         "Built a real-time CAN packet sniffer using Arduino + MCP2515 with interrupt-driven capture",
         "Created a PyQt5 desktop app for live viewing, filtering, and CSV export"
-      ]
+      ],
+      "image": "/projects/can-bus-sniffer.webp"
     },
     {
       "name": "Stereo Audio Player",
