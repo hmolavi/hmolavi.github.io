@@ -55,10 +55,6 @@ export default function Projects() {
             <ProjectCard key={project.name} {...project} />
           ))}
         </div>
-
-        <p className="mt-8 text-sm text-muted-foreground text-center">
-          Projects auto-update from my resume.
-        </p>
       </div>
     </section>
   );
