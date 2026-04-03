@@ -299,19 +299,6 @@
       ]
     },
     {
-      "name": "Firefighter Robot",
-      "tools": [
-        "BASIC",
-        "PIC16F887",
-        "Custom PCBs"
-      ],
-      "bullets": [
-        "Built a maze-navigation firefighter robot using PIC16F887, IR sensing, and blower-based extinguishing",
-        "Implemented wall tracking for obstacle avoidance and room search behavior"
-      ],
-      "image": "/projects/firefighter-robot.webp"
-    },
-    {
       "name": "Stereo Audio Player",
       "tools": [
         "C",
