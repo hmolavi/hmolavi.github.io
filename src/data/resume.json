@@ -195,7 +195,8 @@
       "bullets": [
         "Published an ESP-IDF component for type-safe, macro-generated NVS parameter APIs",
         "Added mutex safety, versioning, callbacks, and UART runtime configuration tools"
-      ]
+      ],
+      "image": "/projects/nvs-config-open-source.webp"
     },
     {
       "name": "Real-Time Operating System",
