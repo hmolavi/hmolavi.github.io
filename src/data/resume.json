@@ -219,7 +219,8 @@
       "bullets": [
         "Designed a fully pipelined 5-stage RISC-V CPU in Verilog",
         "Implemented ALU, decoder, register file, branch logic, and memory/writeback data paths"
-      ]
+      ],
+      "image": "/projects/5-stage-risc-v-processor.webp"
     },
     {
       "name": "Toyota Computer Vision Challenge",
