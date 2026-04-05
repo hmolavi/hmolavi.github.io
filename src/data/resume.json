@@ -254,7 +254,7 @@
         "Built ROS2/Python control logic and extended the TMMC wrapper for Gazebo simulation."
       ],
       "isHardware": true,
-      "url": "https://hmolavi.com/toyota-fleet-challenge/",
+      "url": "https://github.com/hmolavi/Toyota_Fleet_Challenge",
       "image": "/projects/toyota-fleet-control-challenge.webp"
     },
     {
