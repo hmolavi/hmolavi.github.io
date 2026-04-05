@@ -25,10 +25,7 @@ export interface ResumeProject {
   tools: string[];
   bullets: string[];
   url?: string;
-}
-
-export interface ProjectMeta {
-  language: string;
+  image?: string;
   isHardware: boolean;
 }
 
