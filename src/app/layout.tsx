@@ -3,9 +3,9 @@ import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import "./globals.css";
 
-const outfit = localFont({
+const geist = localFont({
   src: "./fonts/GeistVF.woff",
-  variable: "--font-outfit",
+  variable: "--font-geist",
   weight: "100 900",
 });
 
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${outfit.variable} font-sans antialiased`}>
+      <body className={`${geist.variable} font-sans antialiased`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
