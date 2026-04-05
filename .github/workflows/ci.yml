@@ -1,10 +1,10 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  schedule:
+    # Run once daily at 11:59 PM UTC (7:59 PM ET)
+    - cron: "59 23 * * *"
+  workflow_dispatch: # Allow manual trigger
 
 jobs:
   build:
