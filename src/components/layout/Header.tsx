@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -16,8 +17,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="max-w-[1150px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold text-primary">
-          HM
+        <a href="#" className="flex items-center">
+          <Image src="/logo.png" alt="HM Logo" width={40} height={40} />
         </a>
 
         {/* Desktop nav */}
