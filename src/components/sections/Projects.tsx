@@ -4,19 +4,15 @@ import { useState } from "react";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ProjectCard from "@/components/ui/ProjectCard";
 import resumeData from "@/data/resume.json";
-import projectsMeta from "@/data/projects-meta.json";
 
-const PROJECTS = resumeData.projects.map((project) => {
-  const meta = (projectsMeta as Record<string, { language: string; isHardware: boolean }>)[project.name];
-  return {
-    name: project.name,
-    description: project.bullets.join(" "),
-    topics: project.tools,
-    url: (project as Record<string, unknown>).url as string | undefined,
-    isHardware: meta?.isHardware ?? false,
-    image: (project as Record<string, unknown>).image as string | undefined,
-  };
-});
+const PROJECTS = resumeData.projects.map((project) => ({
+  name: project.name,
+  description: project.bullets.join(" "),
+  topics: project.tools,
+  url: "url" in project ? (project.url as string) : undefined,
+  isHardware: project.isHardware,
+  image: "image" in project ? (project.image as string) : undefined,
+}));
 
 export default function Projects() {
   const [filter, setFilter] = useState<"all" | "software" | "hardware">("all");
