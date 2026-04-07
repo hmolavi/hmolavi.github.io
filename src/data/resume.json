@@ -270,7 +270,8 @@
         "Integrated AWS IoT MQTT and reliable ESP32-ATMega SPI communication with error correction."
       ],
       "isHardware": true,
-      "url": "https://github.com/hmolavi/plant-protector"
+      "url": "https://github.com/hmolavi/plant-protector",
+      "image": "/projects/plant-protector-iot-gardening-device.webp"
     },
     {
       "name": "FPGA Sorting Engine",
