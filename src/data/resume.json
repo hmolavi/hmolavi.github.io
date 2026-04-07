@@ -216,6 +216,22 @@
       "image": "/projects/real-time-operating-system.webp"
     },
     {
+      "name": "Plant Protector - IoT Gardening Device",
+      "tools": [
+        "ESP32-S3",
+        "ATMega328P",
+        "KiCad",
+        "AWS IoT Core"
+      ],
+      "bullets": [
+        "Built an IoT plant monitor with custom PCBs and adaptive watering based on sensor telemetry.",
+        "Integrated AWS IoT MQTT and reliable ESP32-ATMega SPI communication with error correction."
+      ],
+      "isHardware": true,
+      "url": "https://github.com/hmolavi/plant-protector",
+      "image": "/projects/plant-protector-iot-gardening-device.webp"
+    },
+    {
       "name": "5-Stage RISC-V Processor",
       "tools": [
         "Verilog"
@@ -256,22 +272,6 @@
       "isHardware": true,
       "url": "https://github.com/hmolavi/Toyota_Fleet_Challenge",
       "image": "/projects/toyota-fleet-control-challenge.webp"
-    },
-    {
-      "name": "Plant Protector - IoT Gardening Device",
-      "tools": [
-        "ESP32-S3",
-        "ATMega328P",
-        "KiCad",
-        "AWS IoT Core"
-      ],
-      "bullets": [
-        "Built an IoT plant monitor with custom PCBs and adaptive watering based on sensor telemetry.",
-        "Integrated AWS IoT MQTT and reliable ESP32-ATMega SPI communication with error correction."
-      ],
-      "isHardware": true,
-      "url": "https://github.com/hmolavi/plant-protector",
-      "image": "/projects/plant-protector-iot-gardening-device.webp"
     },
     {
       "name": "FPGA Sorting Engine",
