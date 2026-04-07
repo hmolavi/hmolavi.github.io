@@ -1,0 +1,55 @@
+# Hossein Molavi
+
+> Embedded systems engineer and Computer Engineering student at the University of Waterloo (graduating April 2026). Specializing in firmware development, wireless protocols, IoT, and hardware integration.
+
+## About
+
+Hossein Molavi is a Computer Engineering (Honours, Co-op) student at the University of Waterloo with deep expertise in embedded systems, low-level firmware, and wireless protocols. He has professional experience across hearing aid firmware, IoT devices, defense technology, solar car systems, and genomics research.
+
+He is also the Founder & CTO of Asymptote Labs, a defense technology startup building autonomous anti-drone turret systems.
+
+## Links
+
+- Portfolio: https://hmolavi.com
+- GitHub: https://github.com/hmolavi
+- LinkedIn: https://linkedin.com/in/hmolavi
+- Email: hmolavi@uwaterloo.ca
+- Resume (PDF): https://hmolavi.com/resume.pdf
+- Book a Meeting: https://calendar.app.google/JTpytHTMsYePoLYJA
+
+## Skills
+
+- Languages: C, C++, Python, Bash/Shell, Verilog, ARM Assembly, Java
+- Hardware/MCUs: STM32, ESP32, nRF, Arduino, ARM Cortex-M, PIC16F887, Raspberry Pi
+- Protocols: Bluetooth Classic/LE Audio, NFMI, I2C, SPI, UART, CAN, MQTT, USB, TCP/IP
+- Tools: FreeRTOS, Zephyr, GDB/JTAG/J-Link, CMake/Make, Git, Docker, AWS IoT Core, PlatformIO, KiCad, Linux
+- Testing: CppUTest, gcov, Pytest, Ellisys BT Analyzer, hardware-in-loop testing
+
+## Experience
+
+- Wireless Developer Intern at Onsemi (Sept 2025 - Present): Developing hearing aid firmware with Bluetooth Classic, LE Audio, and NFMI wireless protocols. Built ear-to-ear audio forwarding, resolved DMA/timing race conditions, wrote 200+ unit tests with 98% coverage.
+- Founder & CTO at Asymptote Labs (Apr 2025 - Present): Founded defense tech startup building autonomous anti-drone turrets with real-time computer vision and precision motor control.
+- Embedded Firmware Engineering Intern at Wrmth Corp. (Jan 2025 - Apr 2025): Engineered ESP32 firmware with BLE, Wi-Fi, AWS IoT Core integration, and OTA updates achieving >99.5% success rate.
+- Software Engineering Intern at Miltera Research Corp (Jan 2024 - Apr 2024): Developed 3 Swift networking packages, automated CRM workflows reducing entry time from 10 min to <4 seconds.
+- Embedded Systems Programmer at Midnight Sun Solar Car Team (Aug 2023 - Dec 2023): Contributed to MSXV solar car firmware with FreeRTOS, DMA-driven ADC, and hardware-in-loop testing on STM32.
+- Full Stack Engineering Intern at Lifestyle Home Products (Sept 2022 - Dec 2023): Built company website, optimized backend with Django/Redis/Celery, reduced Google Ads costs by 15% (~$200K).
+- Research Assistant Intern at Princess Margaret Cancer Center (Jan 2022 - Apr 2022): Optimized genomic data processing on HPC clusters, achieving 400% speed improvement.
+
+## Education
+
+- Bachelor of Applied Science in Computer Engineering (Honours, Co-op), University of Waterloo (Sept 2021 - Apr 2026)
+- Relevant courses: Real-Time Operating Systems, Embedded Microprocessors, Computer Architecture, Systems & Concurrency, DSP
+
+## Projects
+
+- RideSafe (Capstone): Dual-ESP32 cyclist safety system with radar, camera, haptics, and LED alerts using BLE and FreeRTOS.
+- NVS Config (Open Source): Published ESP-IDF component for type-safe NVS parameter APIs. https://github.com/hmolavi/nvs_config
+- Real-Time Operating System: Preemptive RTOS from scratch with EDF scheduling on STM32F401, featuring ARM PendSV/SVC context switching.
+- Plant Protector: IoT plant monitor with custom PCBs, AWS IoT Core MQTT, and adaptive watering. https://github.com/hmolavi/plant-protector
+- 5-Stage RISC-V Processor: Fully pipelined 5-stage RISC-V CPU in Verilog with ALU, branch logic, and memory data paths.
+- Toyota Computer Vision Challenge: Won top vision prize (300+ participants) with fastest completion time using C++ and Orbbec SDK. https://github.com/hmolavi/Toyota_Hackathon
+- Toyota Fleet Control Challenge: Only team to complete all autonomous fleet stages using ROS2 and Python. https://github.com/hmolavi/Toyota_Fleet_Challenge
+- FPGA Sorting Engine: Parallel sorting engine using even-odd transposition pipeline in Verilog. https://github.com/hmolavi/fpga_sorting_engine
+- Firefighter Robot: Autonomous flame-finding robot on PIC16F887 with IR wall-tracking. https://github.com/hmolavi/TEJ-Projects
+- CAN Bus Sniffer: Real-time CAN packet sniffer with Arduino + MCP2515 and PyQt5 desktop app. https://github.com/hmolavi/can-sniffer
+- Stereo Audio Player: FPGA stereo player streaming WAV audio from SD card to WM8731 codec on Intel Cyclone II.
