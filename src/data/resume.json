@@ -239,7 +239,7 @@
         "Built a C++ vehicle-tracking pipeline using the Orbbec Astra SDK."
       ],
       "isHardware": true,
-      "url": "https://hmolavi.com/toyota-challenge/",
+      "url": "https://github.com/hmolavi/Toyota_Hackathon",
       "image": "/projects/toyota-computer-vision-challenge.webp"
     },
     {
