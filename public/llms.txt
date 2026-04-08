@@ -27,7 +27,7 @@ He is also the Founder & CTO of Asymptote Labs, a defense technology startup bui
 
 ## Experience
 
-- Wireless Developer Intern at Onsemi (Sept 2025 - Present): Developing hearing aid firmware with Bluetooth Classic, LE Audio, and NFMI wireless protocols. Built ear-to-ear audio forwarding, resolved DMA/timing race conditions, wrote 200+ unit tests with 98% coverage.
+- Wireless Developer Intern at Onsemi (Sept 2025 - Present): Developing hearing aid firmware with Bluetooth Classic, LE Audio, and NFMI wireless protocols. Built ear-to-ear audio forwarding, resolved DMA/timing race conditions, wrote 200+ unit tests with 100% coverage.
 - Founder & CTO at Asymptote Labs (Apr 2025 - Present): Founded defense tech startup building autonomous anti-drone turrets with real-time computer vision and precision motor control.
 - Embedded Firmware Engineering Intern at Wrmth Corp. (Jan 2025 - Apr 2025): Engineered ESP32 firmware with BLE, Wi-Fi, AWS IoT Core integration, and OTA updates achieving >99.5% success rate.
 - Software Engineering Intern at Miltera Research Corp (Jan 2024 - Apr 2024): Developed 3 Swift networking packages, automated CRM workflows reducing entry time from 10 min to <4 seconds.
