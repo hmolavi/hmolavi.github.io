@@ -15,7 +15,7 @@
         "Brought up NFMI ear-to-ear audio forwarding and conducted RF performance testing for robust wireless audio quality.",
         "Captured HCI logs and Ellisys packet sniffs for AirPods and Galaxy Buds to reverse-engineer Bluetooth Classic and LE Audio implementations of commercial earbuds.",
         "Contributed to standardizing unit tests across the project using the CppUTest framework with gcov, creating a unified test program that fetches and compiles all module tests in the codebase.",
-        "Wrote 200+ unit tests for the NFMI application layer, achieving 100% code coverage."
+        "Wrote 580+ unit tests for the NFMI application layer, achieving 100% code coverage."
       ]
     },
     {
