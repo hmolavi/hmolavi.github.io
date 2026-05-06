@@ -1,11 +1,22 @@
 {
   "experience": [
     {
+      "title": "Wireless Developer Contractor",
+      "company": "Onsemi",
+      "location": "Waterloo, ON",
+      "startDate": "Apr 2026",
+      "endDate": "Present",
+      "bullets": [
+        "Architected an autonomous multi-agent AI ecosystem (Orchestrator, Architect, 8 specialized agents) to automate the firmware lifecycle from Jira ticket intake to PR submission.",
+        "Developed a core automation engine leveraging CMake and J-Link for concurrent multi-device firmware deployment, providing the AI agents with real-time, timestamped hardware telemetry."
+      ]
+    },
+    {
       "title": "Wireless Developer Intern",
       "company": "Onsemi",
       "location": "Waterloo, ON",
       "startDate": "Sept 2025",
-      "endDate": "Present",
+      "endDate": "Apr 2026",
       "bullets": [
         "Developed software for hearing aids specializing in Bluetooth connectivity, audio streaming, and low-power wireless protocols including Bluetooth Classic, LE Audio, and Near-Field Magnetic Induction (NFMI).",
         "Hardened NFMI driver by resolving DMA and timing race conditions that caused corrupt data in received payloads, implementing RX buffer overrun and TX buffer underrun detection in the IRQ handler to flag corrupted audio frames for PLC.",
