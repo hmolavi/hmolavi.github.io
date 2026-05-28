@@ -7,8 +7,8 @@
       "startDate": "Apr 2026",
       "endDate": "Present",
       "bullets": [
-        "Architected an autonomous multi-agent AI ecosystem (Orchestrator, Architect, 8 specialized agents) to automate the firmware lifecycle from Jira ticket intake to PR submission.",
-        "Developed a core automation engine leveraging CMake and J-Link for concurrent multi-device firmware deployment, providing the AI agents with real-time, timestamped hardware telemetry."
+        "Extended NFMI driver robustness, debugging additional DMA and timing race conditions affecting received audio integrity on the RSL20 platform.",
+        "Built a self-validating AI agent pipeline (CMake, J-Link), new to the team, that drives a Jira ticket through code generation, concurrent multi-device build and flash, on-target serial-log and unit-test validation, then PR submission; cut routine task turnaround from 1-2 days to roughly 15 minutes."
       ]
     },
     {
@@ -36,7 +36,7 @@
       "startDate": "Apr 2025",
       "endDate": "Present",
       "bullets": [
-        "Founded defense technology startup building autonomous anti-drone turret systems integrating real-time computer vision with precision motor control.",
+        "Led a team of 5 engineers to build a real-time computer-vision turret integrating YOLO detection with precision motor control.",
         "Designed optimized 4-byte UART serial protocol with start/end byte framing and state-machine parser on Arduino for robust, low-latency command reception from the Python host system.",
         "Engineered real-time converging control system that converts detected object pixel offsets to stepper motor pulse counts using FOV-calibrated degree-per-pixel mapping for precise turret aiming.",
         "Implemented non-blocking dual-axis stepper motor control with microsecond-precision timing, hardware limit switch homing, and automatic Y-axis centering calibration on startup.",
