@@ -75,7 +75,7 @@ export default function About() {
                   <Linkedin className="w-6 h-6" />
                 </a>
                 <a
-                  href="/resume.pdf"
+                  href="/hossein_molavi_resume.pdf"
                   target="_blank"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-primary text-white text-base font-medium hover:bg-primary-dark transition-colors"
                 >
