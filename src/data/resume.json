@@ -1,7 +1,7 @@
 {
   "experience": [
     {
-      "title": "Wireless Developer Contractor",
+      "title": "Wireless Firmware Developer Contractor",
       "company": "Onsemi",
       "location": "Waterloo, ON",
       "startDate": "Apr 2026",
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "title": "Wireless Developer Intern",
+      "title": "Wireless Firmware Developer Intern",
       "company": "Onsemi",
       "location": "Waterloo, ON",
       "startDate": "Sept 2025",
@@ -30,11 +30,11 @@
       ]
     },
     {
-      "title": "Founder & CTO",
+      "title": "Co-Founder & Firmware Lead",
       "company": "Asymptote Labs",
       "location": "Waterloo, ON",
       "startDate": "Apr 2025",
-      "endDate": "Present",
+      "endDate": "Apr 2026",
       "bullets": [
         "Led a team of 5 engineers to build a real-time computer-vision turret integrating YOLO detection with precision motor control.",
         "Designed optimized 4-byte UART serial protocol with start/end byte framing and state-machine parser on Arduino for robust, low-latency command reception from the Python host system.",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "title": "Embedded Firmware Engineering Intern",
+      "title": "Firmware Developer Intern",
       "company": "Wrmth Corp.",
       "location": "North Bay, ON",
       "startDate": "Jan 2025",
@@ -60,7 +60,7 @@
       ]
     },
     {
-      "title": "Software Engineering Intern",
+      "title": "Software Developer Intern",
       "company": "Miltera Research Corp",
       "location": "Waterloo, ON",
       "startDate": "Jan 2024",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "title": "Embedded Systems Programmer",
+      "title": "Firmware Developer",
       "company": "Midnight Sun Solar Car Team",
       "location": "Waterloo, ON",
       "startDate": "Aug 2023",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "title": "Full Stack Engineering Intern",
+      "title": "Software Developer Intern",
       "company": "Lifestyle Home Products",
       "location": "Toronto, ON",
       "startDate": "Sept 2022",
@@ -120,7 +120,7 @@
     "degree": "Bachelor of Applied Science in Computer Engineering (Honours, Co-op)",
     "location": "Waterloo, ON",
     "startDate": "Sept 2021",
-    "endDate": "Apr 2026",
+    "endDate": "Aug 2026",
     "courses": [
       "Real-Time Operating Systems",
       "Embedded Microprocessors",
