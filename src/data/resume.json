@@ -1,11 +1,23 @@
 {
   "experience": [
     {
+      "title": "Technical Co-Founder",
+      "company": "SCADABLE",
+      "location": "Waterloo, ON",
+      "startDate": "Sept 2026",
+      "endDate": "Present",
+      "bullets": [
+        "Building AI-native compliance software that examines customer codebases, databases, infrastructure, and operations to identify gaps, remediate issues, and preserve audit evidence.",
+        "Built the Harness, SCADABLE's agentic decision layer, to execute repository extraction and multi-step model workflows, monitor each run, and record auditable verdicts while keeping non-judgment services deterministic.",
+        "Helped close and onboard two of SCADABLE's three clients through four customer meetings, explaining the product and technical vision and surfacing compliance pain points; worked with CPA audit firms and legal counsel on contract terms."
+      ]
+    },
+    {
       "title": "Wireless Firmware Developer Contractor",
-      "company": "Onsemi",
+      "company": "onsemi",
       "location": "Waterloo, ON",
       "startDate": "Apr 2026",
-      "endDate": "Present",
+      "endDate": "Aug 2026",
       "bullets": [
         "Extended NFMI driver robustness, debugging additional DMA and timing race conditions affecting received audio integrity on the RSL20 platform.",
         "Built a self-validating AI agent pipeline (CMake, J-Link), new to the team, that drives a Jira ticket through code generation, concurrent multi-device build and flash, on-target serial-log and unit-test validation, then PR submission; cut routine task turnaround from 1-2 days to roughly 15 minutes."
@@ -13,7 +25,7 @@
     },
     {
       "title": "Wireless Firmware Developer Intern",
-      "company": "Onsemi",
+      "company": "onsemi",
       "location": "Waterloo, ON",
       "startDate": "Sept 2025",
       "endDate": "Apr 2026",
@@ -109,7 +121,7 @@
       "endDate": "Apr 2022",
       "bullets": [
         "Advanced cancer prevention research by leveraging modern Hi-C techniques and HiC-ProV3 to analyze genomic data.",
-        "Optimized data processing workflows by implementing Python scripts and parallelized techniques on HPC clusters, reducing sample processing time by 400%.",
+        "Made sample processing 5x faster by implementing Python scripts and parallelized workflows on HPC clusters.",
         "Enhanced system reliability by developing automated Python scripts to detect and halt bad datasets before pipeline execution.",
         "Designed and implemented Python command-line tools for efficient genomic data querying and visualization."
       ]
@@ -121,13 +133,7 @@
     "location": "Waterloo, ON",
     "startDate": "Sept 2021",
     "endDate": "Aug 2026",
-    "courses": [
-      "Real-Time Operating Systems",
-      "Embedded Microprocessors",
-      "Computer Architecture",
-      "Systems & Concurrency",
-      "DSP"
-    ]
+    "courses": []
   },
   "skills": {
     "Languages": [
@@ -138,6 +144,11 @@
       "Verilog",
       "ARM Assembly",
       "Java"
+    ],
+    "AI/Automation": [
+      "Agentic workflows",
+      "repository extraction",
+      "multi-step model orchestration"
     ],
     "Hardware/MCUs": [
       "STM32",
